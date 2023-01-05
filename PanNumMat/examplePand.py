@@ -47,4 +47,8 @@ my_frame = pd.DataFrame({'Mom': ['Nat','asd'],
                     'Sis': ['Kate','asdf'],
                     'daught': ['Mia','sdafds']})
 print(my_frame)
-#
+print('-------------')
+# read csv
+rcsv = pd.read_csv('sp500.csv', usecols=['Symbol', 'Sector', 'Price', 'Book Value'], index_col='Symbol')
+print(rcsv)
+
